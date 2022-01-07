@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=The+Nautigal:wght@700&display=swap');
+
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  max-width: 100%;
+  min-width: 100%;
+  min-height: fit-content;
+  max-height: fit-content;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url("./background-pasta.jpg");
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#content{
+  max-width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main{
+  padding: 20% 2rem;
+}
+
+/* Header */
+header{
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  gap: 4rem;
+  background-color: rgb(0,0,0,0.6);
+}
+
+h1{
+  font-family: 'The Nautigal', cursive;
+  font-size: 6rem;
+  text-align: center;
+  background: rgb(49,171,37);
+  background: linear-gradient(90deg, rgba(49,171,37,1) 0%, rgba(181,225,177,1) 25%, rgba(255,255,255,1) 50%, rgba(246,175,175,1) 75%, rgba(228,21,21,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav{
+  max-width: 80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+nav > button{
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  transition: padding-top ease 0.5s;
+  cursor: pointer;
+  height: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.home{
+  color: #31ab25;
+}
+
+.menu{
+  color: #ffffff;
+}
+
+.contact{
+  color: #e41515;
+}
+
+.home:hover, .menu:hover, .contact:hover{
+  padding-top: 0px;
+}
+
+.active{
+  text-decoration: underline 3px;
+  text-underline-offset: 10px;
+}
+
+
+/* Home */
+.homeSect{
+  min-width: 80%;
+  max-width: 80%;
+  background-color: rgb(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.cite{
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.phrase, .author, .home-info{
+  color: #ffffff;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.phrase{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.author{
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.chef-img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./chef.jpg");
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  width: 350px;
+  height: 350px;
+  align-self: center;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  .chef-img{
+    height: 200px;
+    width: 200px;    
+  }
+}
+
+
+.home-info{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+
+/* Menu */
+
+.menuSect{
+  min-width: 80%;
+  max-width: 80%;
+  background-color: rgb(0,0,0,0.6);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem 0;
+}
+
+.pastas-title{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline solid #ffffff 3px;
+  text-underline-offset: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.pastas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem;
+  gap: 12%;
+}
+
+.pasta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 250px;
+  height: 250px;
+  margin: 2rem 0;
+}
+
+.pasta-name{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pasta-img-1{
+  background-image: url('./fetuccini.jpeg');
+}
+
+.pasta-img-2{
+  background-image: url('./mostacol.jpg');
+}
+
+.pasta-img-3{
+  background-image: url('./linguini.jpg');
+}
+
+.pasta-img-4{
+  background-image: url('./ñoqui.jpg');
+}
+
+.pasta-img-5{
+  background-image: url('./ravioli.jpg');
+}
+
+.pasta-img-6{
+  background-image: url('./tortellini.jpg');
+}
+
+.pasta-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+.pasta-price{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* Contact */
+
+.contactSect{
+  min-width: 80%;
+  max-width: 80%;
+  background-color: rgb(0,0,0,0.6);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem 0;
+}
+
+.direction{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.map{
+  height: 400px;
+  width: 600px;
+  background-image: url("./map.png");
+  background: cover no-repeat center;
+  border-radius: 0.2rem;
+  border: 3px white solid;
+  margin: 2rem 0;
+}
+
+.phone{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 830px) {
+  .map{
+    background-position: 10% 10%;
+    height: 250px;
+    width: 450px;    
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .map{
+    background-position: 70% 30%;
+    height: 150px;
+    width: 300px;    
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .map{
+    background-position: 80% 40%;
+    height: 100px;
+    width: 200px;    
+  }
+}
+
+
+/* Footer */
+footer{
+  min-width: 100%;
+  max-width: 100%;
+  background-color: rgb(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .65rem 0;
+  position: relative;
+  top: 100%;
+}
+
+footer > h4{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: .75rem;
+  color: #ffffff;
+}
